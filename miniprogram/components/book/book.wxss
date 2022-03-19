@@ -1,0 +1,70 @@
+/* components/errorImage/errorImage.wxss */
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3260532 */
+  src: url('//at.alicdn.com/t/font_3260532_j1fdf46c5ak.woff2?t=1647684848481') format('woff2'),
+    url('//at.alicdn.com/t/font_3260532_j1fdf46c5ak.woff?t=1647684848481') format('woff'),
+    url('//at.alicdn.com/t/font_3260532_j1fdf46c5ak.ttf?t=1647684848481') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tianjia:before {
+  content: "\e7df";
+}
+
+.book-com {
+  width: 128rpx;
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: column;
+}
+.book-com:hover{
+  opacity: .5;
+}
+
+image,
+.error,
+.add {
+  width: 100%;
+  height: 184rpx;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #aaa;
+}
+
+.book-com .add {
+  border: 1px solid #d7dae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-com .add .iconfont {
+  display: flex;
+}
+
+.book-com .add .icon-tianjia {
+  font-size: 50rpx;
+  color: #aaa;
+}
+.name{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  margin-top: 15rpx;
+}

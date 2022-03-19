@@ -1,0 +1,19 @@
+<view class="book-com" bindtap="handle">
+  <block wx:if="{{add}}">
+    <view class="add" >
+      <icon class="iconfont icon-tianjia"></icon>
+    </view>
+  </block>
+  <block wx:else>
+    <image lazy-load wx:if="{{success}}" src="{{src}}" binderror="loadError" mode="aspectFit"></image>
+    <view wx:else class="error">
+      <text>加</text>
+      <text>载</text>
+      <text>失</text>
+      <text>败</text>
+    </view>
+    <view class="name">
+      <text>{{name}}</text>
+    </view>
+  </block>
+</view>

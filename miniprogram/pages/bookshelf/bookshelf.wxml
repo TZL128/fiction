@@ -1,0 +1,12 @@
+<view class="bookshelf-page">
+  <view class="head">
+    <text bindtap="edit">{{!isEdit?'编辑':'完成'}}</text>
+  </view>
+  <view class="container">
+    <view class="book" wx:for="{{books}}" wx:key="id">
+      <book bindbook="addBook" name="{{item.name}}" src="{{item.url}}" />
+    </view>
+    <book add="true" bindbook="addBook" />
+  </view>
+
+</view>

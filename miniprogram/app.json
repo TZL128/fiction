@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/bookshelf/bookshelf",
+    "pages/mine/mine",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+    "tabBar": {
+    "color":"#9A9A9A",
+    "selectedColor": "#ffffff",
+    "borderStyle":"black",
+    "backgroundColor": "#000000",
+    "list":[
+      {
+        "text": "书城",
+        "pagePath": "pages/index/index",
+        "iconPath": "./assets/tabBarIcon/books.png",
+        "selectedIconPath": "./assets/tabBarIcon/books_select.png"
+      },
+      {
+        "text": "书架",
+        "pagePath": "pages/bookshelf/bookshelf",
+        "iconPath": "./assets/tabBarIcon/bookshelf.png",
+        "selectedIconPath": "./assets/tabBarIcon/bookshelf_select.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/mine/mine",
+        "iconPath": "./assets/tabBarIcon/mine.png",
+        "selectedIconPath": "./assets/tabBarIcon/mine_select.png"
+      }
+    ]
+  }
+}

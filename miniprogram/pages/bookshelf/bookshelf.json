@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "book":"/components/book/book"
+  },
+  "navigationBarTitleText":"书架",
+  "navigationBarBackgroundColor":"#ffffff",
+  "navigationBarTextStyle":"black"
+}
