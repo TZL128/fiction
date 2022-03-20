@@ -1,6 +1,6 @@
-<view class="book-com" bindtap="handle">
+<view class="book-com" bindtap="tapHandle" bindlongpress="longPress">
   <block wx:if="{{add}}">
-    <view class="add" >
+    <view class="add">
       <icon class="iconfont icon-tianjia"></icon>
     </view>
   </block>

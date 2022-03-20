@@ -1,4 +1,4 @@
-.head{
+/* .bookshelf-page .head{
   display: flex;
   justify-content: flex-end;
   font-size: 28rpx;
@@ -12,14 +12,125 @@
   box-sizing: border-box;
   border-bottom: 1px solid #eee;
   background-color: #fff;
+  color: #000000;
+  font-weight: 600;
+} */
+
+.bookshelf-page {
+  position: relative;
 }
 
-.container{
-  margin-top: 60rpx;
+.bookshelf-page .scroll-view {
+  /* margin-top: 60rpx;
+  height:calc(100vh - 60rpx); */
+  height: 100vh;
+}
+
+.bookshelf-page .container {
   padding: 20rpx;
   display: grid;
-  grid-template-columns:  repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 30rpx;
-  justify-items:center;
-  
+  justify-items: center;
+
+}
+
+.action-panel {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.action-panel .box {
+  width: 60%;
+  height: 40%;
+  background-color: #000;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #FFD700;
+}
+
+.action-panel .box .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.action-panel .box .info .image-name {
+  display: flex;
+}
+
+.action-panel .box .info .image-name image {
+  width: 128rpx;
+  height: 184rpx;
+}
+
+.action-panel .box .info .image-name .author {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 20rpx;
+  border-bottom: 1px dashed #fff;
+
+}
+
+.action-panel .box .info .image-name .author .book-name {
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+
+.action-panel .box .info .image-name .author .author-text {
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.action-panel .box .info .introduction{
+  flex: 1;
+  text-indent: 24rpx;
+  font-size: 24rpx;
+  padding: 15rpx;
+  color: #ccc;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+
+}
+
+.action-panel .box .text {
+  color: red;
+  height: 80rpx;
+  border: 1px solid #fff;
+  text-align: center;
+  background-color: #fff;
+  line-height: 80rpx;
+}
+
+
+.action-panel .close{
+  margin-top: 20%;
 }

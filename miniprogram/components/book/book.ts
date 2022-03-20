@@ -4,15 +4,21 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    src:{
-      type:String,
+    src: {
+      type: String,
     },
-    name:{
+    name: {
+      type: String
+    },
+    introduction:{
       type:String
     },
-    add:{
-      type:Boolean,
-      value:false
+    author:{
+      type:String
+    },
+    add: {
+      type: Boolean,
+      value: false
     }
   },
 
@@ -20,20 +26,23 @@ Component({
    * 组件的初始数据
    */
   data: {
-    success:true
+    success: true
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    loadError(){
+    loadError() {
       this.setData({
-        success:!this.data.success
+        success: !this.data.success
       })
     },
-    handle(){
-      this.triggerEvent('book',{name:this.properties.name})
-    }
+    tapHandle() {
+      this.triggerEvent('tapBook', this.properties)
+    },
+    longPress() {
+      this.triggerEvent('longPressBook', this.properties)
+    },
   }
 })
