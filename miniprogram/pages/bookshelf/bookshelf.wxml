@@ -1,35 +1,32 @@
 <view class="bookshelf-page">
-  <!-- <view class="head">
-    <text bindtap="edit">{{!isEdit?'编辑':'完成'}}</text>
-  </view> -->
   <scroll-view scroll-y class="scroll-view" refresher-enabled bindrefresherrefresh="scrollRefresh" refresher-triggered='{{pull}}'>
     <view class="container">
       <view class="book" wx:for="{{books}}" wx:key="id">
-        <book bindtapBook="tapBook" bindlongPressBook="delBook" name="{{item.name}}" src="{{item.url}}" />
+        <book bindtapBook="tapBook" bindlongPressBook="delBook" author="{{item.author}}" name="{{item.name}}" introduction="{{item.introduction}}" src="{{item.url}}" />
       </view>
       <book add="true" bindbook="addBook" />
     </view>
   </scroll-view>
 
-  <view class="action-panel" wx:if="{{showPanel}}">
-    <view class="box">
+  <view class="action-panel" bindtap="cancel" wx:if="{{showPanel}}">
+    <view class="box" catchtap="()=>{}">
       <view class="info">
         <view class="image-name">
           <image mode="aspectFit" src="{{panelBook.src}}"></image>
           <view class="author">
             <text class="book-name">{{panelBook.name}}</text>
-            <text class="author-text">by：tzl </text>
+            <text class="author-text">{{panelBook.author}} </text>
           </view>
 
         </view>
         <view class="introduction">
-          简介：哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊啊啊啊啊啊啊啊
+          {{panelBook.introduction}}
         </view>
       </view>
-      <view class="text">移除书架</view>
+      <view class="text" catchtap="remove">移除书架</view>
     </view>
     <view class="close">
-      <icon type="cancel" size="64rpx" color="#000" bindtap="cancel"></icon>
+      <icon type="cancel" size="64rpx" color="#fff" bindtap="cancel"></icon>
     </view>
   </view>
 

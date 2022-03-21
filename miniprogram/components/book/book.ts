@@ -18,7 +18,6 @@ Component({
     },
     add: {
       type: Boolean,
-      value: false
     }
   },
 

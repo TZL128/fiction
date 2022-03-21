@@ -1,0 +1,109 @@
+/* pages/introduce/introduce.wxss */
+
+.introduce,
+.introduce .scroll-view {
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.introduce .head {
+  display: flex;
+  padding: 0rpx 20rpx;
+  padding-bottom: 40rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #d7dae2;
+  height: 314rpx;
+}
+
+/* .book-image{
+  border: 1px solid #ddd;
+} */
+.book-image image {
+  width: 216rpx;
+  height: 314rpx;
+  background-image: linear-gradient(90deg, hsla(0, 0%, 63.1%, .25), rgba(21, 21, 20, .1) 1%, hsla(0, 0%, 100%, .15) 4%, hsla(0, 0%, 58%, .1) 8%, hsla(0, 0%, 89%, 0) 57%, rgba(223, 218, 218, .03) 91%, rgba(223, 218, 218, .05) 98%, hsla(0, 0%, 100%, .1));
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, .1);
+}
+
+.book-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0rpx 20rpx;
+  height: 100%;
+  justify-content: center;
+}
+
+.book-info .name {
+  font-size: 36rpx;
+  color: #000;
+}
+
+.book-info .author {
+  font-size: 32rpx;
+  color: #0097ff;
+  margin: 20rpx 0rpx;
+}
+
+.book-info .introduction {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #666;
+  flex-basis: 54rpx;
+  text-indent: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.recommend {
+  /* height: 251rpx;
+  width: 173rpx;
+  border: 1px solid rgb(245, 161, 161); */
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 20rpx;
+
+}
+
+.recommend .title {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.book-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 40rpx 0rpx;
+}
+.book-list .image-box{
+  display: flex;
+  flex-direction: column;
+  width: 172rpx;
+  flex-wrap: wrap;
+}
+.book-list .image-box .name{
+  margin-top: 20rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+
+}
+.book-list image{
+  width: 130rpx;
+  height: 188rpx;
+  border: 1px solid #ddd;
+}
+.change{
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding: 20rpx 0rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  color: #444;
+}
+.container{
+  height: 500px;
+}

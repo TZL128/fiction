@@ -1,0 +1,31 @@
+<!--pages/introduce/introduce.wxml-->
+<view class="introduce">
+  <scroll-view scroll-y class='scroll-view'>
+    <view class="head">
+      <view class="book-image">
+        <image src="{{book.src}}" mode="aspectFit"></image>
+      </view>
+      <view class="book-info">
+        <view class="name">{{book.name}}</view>
+        <view class="author">{{book.author}}</view>
+        <view class="introduction">
+          {{book.introduction}}
+        </view>
+
+      </view>
+    </view>
+    <view class="recommend">
+      <view class="title">书籍推荐</view>
+      <view class="book-list">
+        <view class="image-box" wx:for="{{4}}" wx:key="index">
+          <image></image>
+          <view class="name">{{index}}</view>
+        </view>
+      </view>
+      <view class="change">换一批</view>
+    </view>
+    <view class="container">
+    </view>
+  </scroll-view>
+
+</view>

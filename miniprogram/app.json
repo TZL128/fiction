@@ -2,7 +2,8 @@
   "pages": [
     "pages/bookshelf/bookshelf",
     "pages/mine/mine",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/introduce/introduce"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,12 +13,12 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-    "tabBar": {
-    "color":"#9A9A9A",
+  "tabBar": {
+    "color": "#9A9A9A",
     "selectedColor": "#ffffff",
-    "borderStyle":"black",
+    "borderStyle": "black",
     "backgroundColor": "#000000",
-    "list":[
+    "list": [
       {
         "text": "书城",
         "pagePath": "pages/index/index",
