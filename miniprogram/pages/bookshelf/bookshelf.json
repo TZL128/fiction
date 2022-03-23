@@ -2,7 +2,6 @@
   "usingComponents": {
     "book":"/components/book/book"
   },
-  "lazyCodeLoading": "requiredComponents",
   "navigationBarTitleText":"书架",
   "navigationBarBackgroundColor":"#ffffff",
   "navigationBarTextStyle":"black"

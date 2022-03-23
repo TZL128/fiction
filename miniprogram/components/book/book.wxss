@@ -35,7 +35,7 @@
 }
 
 
-image,
+.image,
 .error,
 .add {
   width: 100%;

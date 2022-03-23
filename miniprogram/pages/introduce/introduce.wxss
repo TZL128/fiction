@@ -1,5 +1,4 @@
 /* pages/introduce/introduce.wxss */
-
 .introduce,
 .introduce .scroll-view {
   height: 100vh;
@@ -8,7 +7,7 @@
 
 .introduce .head {
   display: flex;
-  padding: 0rpx 20rpx;
+  padding: 0rpx 40rpx;
   padding-bottom: 40rpx;
   background-color: #fff;
   border-bottom: 1px solid #d7dae2;
@@ -35,8 +34,8 @@
 }
 
 .book-info .name {
-  font-size: 36rpx;
-  color: #000;
+  font-size: 40rpx;
+  font-family: 'Microsoft YaHei';
 }
 
 .book-info .author {
@@ -47,9 +46,9 @@
 
 .book-info .introduction {
   font-size: 28rpx;
-  line-height: 28rpx;
+  line-height: 40rpx;
   color: #666;
-  flex-basis: 54rpx;
+  flex-basis: 80rpx;
   text-indent: 28rpx;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -64,7 +63,7 @@
   border: 1px solid rgb(245, 161, 161); */
   margin-top: 20rpx;
   background-color: #fff;
-  padding: 20rpx;
+  padding: 20rpx 40rpx;
 
 }
 
@@ -72,30 +71,35 @@
   font-size: 32rpx;
   font-weight: bold;
 }
-.book-list{
+
+.book-list {
   display: flex;
   justify-content: space-between;
   margin: 40rpx 0rpx;
 }
-.book-list .image-box{
+
+.book-list .image-box {
   display: flex;
   flex-direction: column;
   width: 172rpx;
-  flex-wrap: wrap;
+  align-items: center;
 }
-.book-list .image-box .name{
+
+.book-list .image-box .name {
   margin-top: 20rpx;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100%;
-
+  text-align: center;
 }
-.book-list image{
+
+.book-list image {
   width: 130rpx;
   height: 188rpx;
   border: 1px solid #ddd;
 }
-.change{
+
+.change {
   width: 80%;
   margin: 0 auto;
   background-color: #f8f8f8;
@@ -104,6 +108,64 @@
   text-align: center;
   color: #444;
 }
-.container{
-  height: 500px;
+
+.container {
+  padding: 20rpx 40rpx;
+  position: relative;
+}
+
+.container .title {
+  font-size: 28rpx;
+}
+
+.introduce .action {
+  position: fixed;
+  bottom: -120rpx;
+  left: 0;
+  width: 100%;
+  padding: 20rpx 40rpx 20rpx 40rpx;
+  background-color: #fff;
+  border-top: 1px solid #d7dae2;
+  z-index: 999;
+  display: flex;
+  transition: all .2s linear;
+}
+
+.introduce .action.show {
+  bottom: 0rpx;
+}
+
+.introduce .action .item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #aaa;
+  font-size: 24rpx;
+  margin-right: 100rpx;
+}
+
+
+
+.introduce .action .add {
+  display: flex;
+  background-color: #0097ff;
+  border-radius: 40rpx;
+  padding: 10rpx 20rpx;
+  color: #fff;
+  font-size: 28rpx;
+  align-items: center;
+}
+
+.introduce .action .add .iconfont {
+  margin-right: 20rpx;
+  font-size: 32rpx;
+  display: flex;
+  margin-top: 6rpx;
+}
+
+
+.introduce .action .item .iconfont {
+  font-size: 40rpx;
+  display: flex;
 }

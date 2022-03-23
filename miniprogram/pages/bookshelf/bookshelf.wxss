@@ -35,7 +35,6 @@
 
 .action-panel .box {
   width: 60%;
-  height: 210px;
   background-color: #000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .24), 0 0 6px rgba(0, 0, 0, .04);
   border-radius: 20rpx;
@@ -67,7 +66,7 @@
   flex-direction: column;
   justify-content: space-around;
   margin: 0 20rpx;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed #aaa;
 
 }
 
@@ -93,17 +92,17 @@
 }
 .action-panel .box .info .introduction{
   /* flex: 1; */
-  height: 64px;
-  text-indent: 26px;
-  font-size: 13px;
+  height: 200rpx;
+  text-indent: 56rpx;
+  font-size: 28rpx;
   color: #ccc;
-  margin: 6px 6px 0px 6px ;
+  margin: 12rpx 12rpx 0rpx 12rpx ;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
-  line-height: 13px;
+  line-height: 40rpx;
 
 }
 

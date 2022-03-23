@@ -5,7 +5,7 @@
     </view>
   </block>
   <block wx:else>
-    <image lazy-load wx:if="{{success}}" src="{{src}}" binderror="loadError" mode="aspectFit"></image>
+    <image class='image' lazy-load wx:if="{{success}}" src="{{src}}" binderror="loadError" mode="aspectFit"></image>
     <view wx:else class="error">
       <text>加</text>
       <text>载</text>
