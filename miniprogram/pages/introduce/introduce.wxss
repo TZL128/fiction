@@ -136,7 +136,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  color: #aaa;
+  color: #000;
   font-size: 24rpx;
   margin-right: 100rpx;
 }
@@ -145,7 +145,7 @@
 
 .introduce .action .add {
   display: flex;
-  background-color: #0097ff;
+  background-color: #000;
   border-radius: 40rpx;
   padding: 10rpx 20rpx;
   color: #fff;

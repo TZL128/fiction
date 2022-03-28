@@ -15,9 +15,9 @@
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#9A9A9A",
-    "selectedColor": "#ffffff",
-    "borderStyle": "black",
-    "backgroundColor": "#000000",
+    "selectedColor": "#000",
+    "borderStyle":"black",
+    "backgroundColor": "#fff",
     "list": [
       {
         "text": "书城",

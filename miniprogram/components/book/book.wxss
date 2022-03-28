@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 3260532 */
+  font-family: "iconfont";
+  /* Project id 3260532 */
   src: url('//at.alicdn.com/t/font_3260532_46gemxw3bzd.woff2?t=1647781534300') format('woff2'),
-       url('//at.alicdn.com/t/font_3260532_46gemxw3bzd.woff?t=1647781534300') format('woff'),
-       url('//at.alicdn.com/t/font_3260532_46gemxw3bzd.ttf?t=1647781534300') format('truetype');
+    url('//at.alicdn.com/t/font_3260532_46gemxw3bzd.woff?t=1647781534300') format('woff'),
+    url('//at.alicdn.com/t/font_3260532_46gemxw3bzd.ttf?t=1647781534300') format('truetype');
 }
 
 .iconfont {
@@ -30,7 +31,7 @@
   flex-direction: column;
 }
 
-.book-com:hover{
+.book-com:hover {
   opacity: .5;
 }
 
@@ -53,7 +54,6 @@
 }
 
 .book-com .add {
-  border: 1px solid #d7dae2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,14 +65,14 @@
 
 .book-com .add .icon-tianjia {
   font-size: 50rpx;
-  color: #aaa;
+  color: #000;
 }
-.name{
+
+.name {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   margin-top: 15rpx;
 }
-

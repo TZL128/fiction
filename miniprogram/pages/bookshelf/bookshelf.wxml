@@ -26,7 +26,7 @@
       <view class="text" catchtap="remove">移除书架</view>
     </view>
     <view class="close">
-      <icon type="cancel" size="64rpx" color="#fff" bindtap="cancel"></icon>
+      <icon class="iconfont icon-shanchu" bindtap="cancel"></icon>
     </view>
   </view>
 

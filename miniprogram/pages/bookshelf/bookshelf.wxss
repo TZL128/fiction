@@ -4,6 +4,7 @@
 
 .bookshelf-page .scroll-view {
   height: 100vh;
+  
 }
 
 .bookshelf-page .container {
@@ -118,4 +119,8 @@
 
 .action-panel .close {
   margin-top: 20%;
+  color: #000;
+}
+.action-panel .close .iconfont{
+  font-size: 52rpx;
 }
