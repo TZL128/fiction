@@ -11,7 +11,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    book: {}
+    book: {},
+    recommendList:[],
+    showAction:false
   },
 
   /**
@@ -72,5 +74,21 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  changeBatch(){
+    console.log('换一批');
+  },
+
+  handel(){
+    this.setData({
+      showAction:!this.data.showAction
+    })
+    
+  },
+  touchend(e:WechatMiniprogram.BaseEvent){
+    console.log(e);
+    
   }
+
 })

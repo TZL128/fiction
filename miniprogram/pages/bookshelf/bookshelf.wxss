@@ -65,7 +65,7 @@
   flex-direction: column;
   justify-content: space-around;
   margin: 0 20rpx;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed #aaa;
 
 }
 
