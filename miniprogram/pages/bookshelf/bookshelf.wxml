@@ -9,11 +9,11 @@
   </scroll-view>
 
   <view class="action-panel" bindtap="cancel" wx:if="{{showPanel}}">
-    <view class="box" catchtap="()=>{}">
-      <view class="info">
-        <view class="image-name">
-          <image mode="aspectFit" src="{{panelBook.src}}"></image>
-          <view class="author">
+    <view class="box" catchtap="e=>e">
+      <view class="book-info">
+        <view class="book-image">
+          <image class="image" src="{{panelBook.src}}"></image>
+          <view class="book-author">
             <text class="book-name">{{panelBook.name}}</text>
             <text class="author-text">{{panelBook.author}} </text>
           </view>
